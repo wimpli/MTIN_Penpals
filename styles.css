@@ -1,0 +1,71 @@
+/* generell ------------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+}
+
+/* Texte ------------------------------------------------------------------------------------------------*/
+
+h1{
+color: white;
+z-index: 0;
+}
+
+/* Szenen Basics ------------------------------------------------------------------------------------------------*/
+
+.scene1,
+.scene2,
+.scene3,
+.scene4 {
+    height: 100vh;
+}
+
+.scene1 {
+    background-color: salmon;
+}
+
+.scene2 {
+    background-color: pink;
+}
+
+.scene3{
+    background-color: beige;
+}
+
+.scene4{
+    background-color:darksalmon;
+}
+
+
+/* Szene 1 ------------------------------------------------------------------------------------------------*/
+
+.envback {
+    position: absolute;
+    z-index: 1;
+    height: 1000px;
+    width: 750px;
+    background-image: url(images/envelope_version1/envelope_back.png);
+}
+
+.letter {
+    position: absolute;
+    z-index: 2;
+    height: 1000px;
+    width: 750px;
+    background-image: url(images/envelope_version1/letter.png);
+}
+
+.envfront {
+    position: absolute;
+    z-index: 3;
+    height: 1000px;
+    width: 750px;
+    background-image: url(images/envelope_version1/envelope_front.png);
+}
+
+.wrapper {
+    height: 1000px;
+    width: 750px;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+}
