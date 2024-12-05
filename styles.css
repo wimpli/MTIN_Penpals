@@ -20,7 +20,8 @@ font-size: 4rem;
 .scene1,
 .scene2,
 .scene3,
-.scene4 {
+.scene4,
+.scene5 {
     height: 100vh;
 }
 
@@ -40,6 +41,9 @@ font-size: 4rem;
     background-color:darksalmon;
 }
 
+.scene5{
+    background-color: ivory;
+}
 
 /* Szene 1 ------------------------------------------------------------------------------------------------*/
 
