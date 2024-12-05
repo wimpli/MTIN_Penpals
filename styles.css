@@ -79,7 +79,6 @@ font-size: 4rem;
     position: absolute;
 }
 
-<<<<<<< Updated upstream
 /* Szene 5 ------------------------------------------------------------------------------------------------*/
 
 .scene5 {
@@ -133,17 +132,3 @@ font-size: 4rem;
     height: 250px;
     background-color: rgba(33, 150, 243, 0.9);
 }
-=======
-.postauto{
-    background-image: url(images/prototyp/autoNEU.png);
-    transform: scaleX(-1);
-    padding-top: 175px ;
-    height:1200px;
-    width: 1200px;
-    z-index: 15;
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
->>>>>>> Stashed changes
