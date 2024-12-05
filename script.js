@@ -10,12 +10,14 @@ const tlBrief = gsap.timeline({
     scrollTrigger: {
         trigger: '.scene1',
         markers: true,
-        scrub: 2,
+        scrub: true,    
         pin: true,
+        end: '+=7000',
     }
 })
 
-tlBrief.to('.ganzerBrief', { x: 475 })
-tlBrief.to('.letter', { y: -950, })
+tlBrief.to('.ueberschrift', { opacity: 0, duration: 5 });
+tlBrief.to('.ganzerBrief', { x: 475, duration: 10});
+tlBrief.to('.letter', { y: -950, duration:15, end: '+=00000'});
 
 // ------------------------------------------------------------------------
