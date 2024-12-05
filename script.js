@@ -5,20 +5,23 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.set('.ganzerBrief', { x: -750 })
 gsap.set('.ganzerBrief', { y: -100 })
 gsap.set('.letter', { y: 500 })
+gsap.set('.postauto', { x: -1200 })
 
 const tlBrief = gsap.timeline({
     scrollTrigger: {
         trigger: '.scene1',
         markers: true,
-        scrub: true,    
+        scrub: true,
         pin: true,
         end: '+=7000',
     }
 })
 
 tlBrief.to('.ueberschrift', { opacity: 0, duration: 5 });
-tlBrief.to('.ganzerBrief', { x: 475, duration: 10});
-tlBrief.to('.letter', { y: -950, duration:15, end: '+=00000'});
+tlBrief.to('.ganzerBrief', { x: 475, duration: 10 });
+tlBrief.to('.letter', { y: -950, duration: 15, end: '+=00000' });
+tlBrief.to('.envfront, .envback', { opacity: 0, duration: 4 });
+tlBrief.to('.postauto', {  x: 1800, duration: 15})
 
 // ------------------------------------------------------------------------
 
