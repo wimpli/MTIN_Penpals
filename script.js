@@ -13,7 +13,7 @@ const tlBrief = gsap.timeline({
         markers: true,
         scrub: true,
         pin: true,
-        end: '+=7000',
+        end: '+=3000',
     }
 })
 
