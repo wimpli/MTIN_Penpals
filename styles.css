@@ -34,7 +34,6 @@ font-size: 4rem;
 }
 
 .scene3{
-    background-color: beige;
 }
 
 .scene4{
@@ -79,6 +78,12 @@ font-size: 4rem;
     position: absolute;
 }
 
+
+/* Szene 3------------------------------- */
+.scene3{
+    background-image: url(images/tisch_aiko/backround.png);
+    background-size: cover;
+}
 /* Szene 5 ------------------------------------------------------------------------------------------------*/
 
 .scene5 {
@@ -115,12 +120,6 @@ font-size: 4rem;
     object-fit: cover;
 }
 
-/* .rectangle.top {
-    width: 300px;
-    height: 150px;
-    background-color: rgba(255, 111, 97, 0.9);
-} */
-
 .rectangle.middle {
     width: 400px;
     height: 200px;
@@ -132,3 +131,4 @@ font-size: 4rem;
     height: 250px;
     background-color: rgba(33, 150, 243, 0.9);
 }
+

@@ -10,7 +10,7 @@ gsap.set('.postauto', { x: -1200 })
 const tlBrief = gsap.timeline({
     scrollTrigger: {
         trigger: '.scene1',
-        markers: true,
+        markers: false,
         scrub: true,
         pin: true,
         end: '+=3000',
@@ -33,7 +33,7 @@ gsap.to(".middle", {
         start: "top center",    
         end: "bottom+=200 center",
         scrub: true,
-        markers: true,
+        markers: false,
     },
     y: 300,
 });
