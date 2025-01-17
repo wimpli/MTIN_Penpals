@@ -78,11 +78,31 @@ font-size: 4rem;
     position: absolute;
 }
 
+.animation{
+    background-image:url(/images/Animation.png);
+    z-index:4;
+   background-size: cover;
+   height: 1080px;
+   position:absolute;
+}
 
 /* Szene 3------------------------------- */
 .scene3{
     background-image: url(images/tisch_aiko/backround.png);
     background-size: cover;
+    
+}
+
+.controller{
+    background-image: url(images/tisch_aiko/Controller.png);
+    height: 1920px;
+    overflow: hidden;
+    
+} 
+.controllerBlink{
+    background-image: url(images/tisch_aiko/controllerBlink.png);
+    height: 1920px;
+    
 }
 /* Szene 5 ------------------------------------------------------------------------------------------------*/
 
