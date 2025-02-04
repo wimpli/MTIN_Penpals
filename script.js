@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin();
 
 // Szene 1 ------------------------------------------------------------
 
@@ -22,7 +23,6 @@ tlBrief.to('.ganzerBrief', { x: 475, duration: 10 });
 tlBrief.to('.letter', { y: -950, duration: 15, end: '+=00000' });
 tlBrief.to('.envfront, .envback', { opacity: 0, duration: 4 });
 tlBrief.to('.ganzerBrief', { x: -750 });
-tlBrief.to('.postauto', { x: 1800, duration: 15 })
 
 // Szene3------------------------------------------------------------------------
 
