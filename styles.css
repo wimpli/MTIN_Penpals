@@ -5,14 +5,14 @@ body {
 
 /* Texte ------------------------------------------------------------------------------------------------*/
 
-h1{
-color: white;
-z-index: 10;
-position: absolute;
-top: 45%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 4rem;
+h1 {
+    color: white;
+    z-index: 10;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
 }
 
 /* Szenen Basics ------------------------------------------------------------------------------------------------*/
@@ -33,14 +33,7 @@ font-size: 4rem;
     background-color: pink;
 }
 
-.scene3{
-}
-
-.scene4{
-    background-color:darksalmon;
-}
-
-.scene5{
+.scene5 {
     background-color: ivory;
 }
 
@@ -78,34 +71,149 @@ font-size: 4rem;
     position: absolute;
 }
 
-.animation{
-    background-image:url(/images/Animation.png);
-    z-index:4;
-   background-size: cover;
-   height: 1080px;
-   position:absolute;
+.animation {
+    background-image: url(/images/Animation.png);
+    z-index: 4;
+    background-size: cover;
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
 }
 
 /* Szene 3------------------------------- */
-.scene3{
+
+.bg {
     background-image: url(images/tisch_aiko/backround.png);
     background-size: cover;
-    
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.controller{
+.controller {
     background-image: url(images/tisch_aiko/Controller.png);
-    height: 1920px;
+    height: 100vh;
     overflow: hidden;
-    
-} 
-.controllerBlink{
-    background-image: url(images/tisch_aiko/controllerBlink.png);
-    height: 1920px;
-    
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
 }
+
+.controllerBlink {
+    background-image: url(images/tisch_aiko/controllerBlink.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 3;
+    position: absolute;
+}
+
+.coffee1{
+    background-image: url(images/tisch_aiko/latte1.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 4;
+    position: absolute;
+    background-size: cover;
+    opacity: 0;
+}
+
+.coffee2{
+    background-image: url(images/tisch_aiko/latte2.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    background-size: cover;
+    opacity: 0;
+}
+
+.wlan{
+    background-image: url(images/tisch_aiko/Wlan_Cameradot.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    background-size: cover;
+}
+
+.brief2{
+    background-image: url(images/neuMaterial/BriefvonAiko_auf_tisch.png);
+    height: 110vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    background-size: cover;
+    right: -1100px;
+
+}
+
+/* Szene 4------------------------------- */
+.bgSzen4 {
+    background-image: url(images/SeinTisch/hintergrund.png);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.brief3{
+    background-image: url(images/Brief2Miron.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    background-size: cover;
+    transform: translateX(-1200px);
+}
+
+.kompass1{
+    background-image: url(images/SeinTisch/kompass-pfeil1.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 4;
+    position: absolute;
+    background-size: cover;
+}
+
+.kompass2{
+    background-image: url(images/SeinTisch/kompass-pfeil2.png);
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 5;
+    position: absolute;
+    background-size: cover;
+}
+
+
 /* Szene 5 ------------------------------------------------------------------------------------------------*/
 
+.bgSzene5{
+    background-image: url(images/rucksack_szene.png);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cameraFlash{
+    background-image: url(images/neuMaterial/rucksack/2_BlinkenDerKamera.png);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* 
 .scene5 {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -150,5 +258,4 @@ font-size: 4rem;
     width: 500px;
     height: 250px;
     background-color: rgba(33, 150, 243, 0.9);
-}
-
+} */
