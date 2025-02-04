@@ -26,8 +26,6 @@ tlBrief.to('.postauto', { x: 1800, duration: 15 })
 
 // Szene3------------------------------------------------------------------------
 
-gsap.set(".coffee1", { filter: "blur(3px)",opacity: 0 })
-gsap.set(".coffee2", {opacity:0});
 gsap.set(".wlan", { opacity:0});
 gsap.set('.controllerBlink', {opacity:0});
 
@@ -37,16 +35,10 @@ const tlBrief2 = gsap.timeline({
       markers: false,
       scrub: true,
       pin: true,
-      end: '+=1000',
-      toggleActions: "play none none reset",
- 
     }
   });
   
-  tlBrief2.to(".brief2", { x: -1100, duration: 10, toggleActions: "play none none none",});
-
-
-
+  tlBrief2.to(".brief2", { x: -1100, duration: 10});
 
 const tlController = gsap.timeline({ repeat: -1, repeatDelay: 0});
 tlController.to(".controllerBlink", { opacity: 1, duration: 2, ease: "expo.inOut" });
@@ -56,12 +48,8 @@ const tlWlan = gsap.timeline({repeat:-1,repeatDelay:0});
 tlWlan.to(".wlan", {opacity:1, duration:1});
 tlWlan.to(".wlan", {opacity:0, duration:1});
 
-
-
-
 // Szene4-------------------------------------------------------------
 gsap.set('.kompass1',{opacity:1, transformOrigin: "85% 18%",rotation: -20,});
-gsap.set('.kompass2',{opacity:0});
 
 const tlKompass = gsap.timeline({ repeat: -1, repeatDelay: 0});
 tlKompass.to(".kompass1", { transformOrigin: "85% 18%",rotation: 20, duration: 1.5, ease: "expo.inOut" });
@@ -77,30 +65,15 @@ const tlBrief3 = gsap.timeline({
       end: '+=1600',
     }
   });
-  
+
   tlBrief3.to(".brief3", { x: +100, duration: 10 });
 
 
 // Szene 5 ------------------------------------------------------------
 
-
-
 const tlCamera = gsap.timeline({ repeat: -1, repeatDelay: 0});
 tlCamera.to(".cameraFlash", { opacity: 1, duration: 2, ease: "expo.inOut" });
 tlCamera.to(".cameraFlash", { opacity: 0, duration: 1, ease: "expo.inOut" });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

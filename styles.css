@@ -2,8 +2,10 @@
 body {
     margin: 0;
 }
-
-/* Texte ------------------------------------------------------------------------------------------------*/
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 h1 {
     color: white;
@@ -15,8 +17,6 @@ h1 {
     font-size: 4rem;
 }
 
-/* Szenen Basics ------------------------------------------------------------------------------------------------*/
-
 .scene1,
 .scene2,
 .scene3,
@@ -25,26 +25,19 @@ h1 {
     height: 100vh;
 }
 
+
+/* Szene 1 ------------------------------------------------------------------------------------------------*/
+
 .scene1 {
     background-color: rgb(66, 95, 74);
 }
-
-.scene2 {
-    background-color: pink;
-}
-
-.scene5 {
-    background-color: ivory;
-}
-
-/* Szene 1 ------------------------------------------------------------------------------------------------*/
 
 .envback {
     position: absolute;
     z-index: 1;
     height: 1000px;
     width: 750px;
-    background-image: url(images/envelope_version1/envelope_back.png);
+    background-image: url(images/Szene1/envelope_back.png);
 }
 
 .letter {
@@ -52,7 +45,7 @@ h1 {
     z-index: 2;
     height: 1000px;
     width: 750px;
-    background-image: url(images//prototyp/Untitled_Artwork.png);
+    background-image: url(images/Szene1/Brief1.png);
 }
 
 .envfront {
@@ -60,7 +53,7 @@ h1 {
     z-index: 3;
     height: 1000px;
     width: 750px;
-    background-image: url(images/envelope_version1/envelope_front.png);
+    background-image: url(images/Szene1/envelope_front.png);
 }
 
 .wrapper {
@@ -72,7 +65,7 @@ h1 {
 }
 
 .animation {
-    background-image: url(/images/Animation.png);
+    background-image: url(/images/Szene1/Animation.png);
     z-index: 4;
     background-size: cover;
     height: 1080px;
@@ -83,7 +76,7 @@ h1 {
 /* Szene 3------------------------------- */
 
 .bg {
-    background-image: url(images/tisch_aiko/backround.png);
+    background-image: url(images/Szene3/backround.png);
     background-size: cover;
     position: absolute;
     height: 100vh;
@@ -92,7 +85,7 @@ h1 {
 }
 
 .controller {
-    background-image: url(images/tisch_aiko/Controller.png);
+    background-image: url(images/Szene3/Controller.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
@@ -101,7 +94,7 @@ h1 {
 }
 
 .controllerBlink {
-    background-image: url(images/tisch_aiko/controllerBlink.png);
+    background-image: url(images/Szene3/controllerBlink.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
@@ -110,29 +103,18 @@ h1 {
 }
 
 .coffee1{
-    background-image: url(images/tisch_aiko/latte1.png);
+    background-image: url(images/Szene3/latte1.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
     z-index: 4;
     position: absolute;
     background-size: cover;
-    opacity: 0;
-}
-
-.coffee2{
-    background-image: url(images/tisch_aiko/latte2.png);
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    z-index: 5;
-    position: absolute;
-    background-size: cover;
-    opacity: 0;
+    opacity: 1;
 }
 
 .wlan{
-    background-image: url(images/tisch_aiko/Wlan_Cameradot.png);
+    background-image: url(images/Szene3/Wlan_Cameradot.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
@@ -142,7 +124,7 @@ h1 {
 }
 
 .brief2{
-    background-image: url(images/neuMaterial/BriefvonAiko_auf_tisch.png);
+    background-image: url(images/Szene3/BriefvonAiko_auf_tisch.png);
     height: 110vh;
     overflow: hidden;
     width: 100vw;
@@ -155,7 +137,7 @@ h1 {
 
 /* Szene 4------------------------------- */
 .bgSzen4 {
-    background-image: url(images/SeinTisch/hintergrund.png);
+    background-image: url(images/Szene4/hintergrund.png);
     background-size: cover;
     position: absolute;
     height: 100vh;
@@ -163,7 +145,7 @@ h1 {
 }
 
 .brief3{
-    background-image: url(images/Brief2Miron.png);
+    background-image: url(images/Szene4/Brief2Miron.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
@@ -174,7 +156,7 @@ h1 {
 }
 
 .kompass1{
-    background-image: url(images/SeinTisch/kompass-pfeil1.png);
+    background-image: url(images/Szene4/kompass-pfeil1.png);
     height: 100vh;
     overflow: hidden;
     width: 100vw;
@@ -183,21 +165,10 @@ h1 {
     background-size: cover;
 }
 
-.kompass2{
-    background-image: url(images/SeinTisch/kompass-pfeil2.png);
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    z-index: 5;
-    position: absolute;
-    background-size: cover;
-}
-
-
 /* Szene 5 ------------------------------------------------------------------------------------------------*/
 
 .bgSzene5{
-    background-image: url(images/rucksack_szene.png);
+    background-image: url(images/Szene5/rucksack_szene.png);
     background-size: cover;
     position: absolute;
     height: 100vh;
@@ -205,7 +176,7 @@ h1 {
 }
 
 .cameraFlash{
-    background-image: url(images/neuMaterial/rucksack/2_BlinkenDerKamera.png);
+    background-image: url(images/Szene5/2_BlinkenDerKamera.png);
     background-size: cover;
     position: absolute;
     height: 100vh;
