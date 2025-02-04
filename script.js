@@ -6,7 +6,6 @@ gsap.registerPlugin();
 gsap.set('.ganzerBrief', { x: -750 })
 gsap.set('.ganzerBrief', { y: -100 })
 gsap.set('.letter', { y: 500 })
-gsap.set('.postauto', { x: -1200 })
 
 const tlBrief = gsap.timeline({
     scrollTrigger: {
