@@ -16,7 +16,9 @@ h1 {
     transform: translate(-50%, -50%);
     font-size: 4rem;
 }
-
+.arrow{
+    background-image: url("images/Szene1/Arrow.svg");
+}
 .scene1,
 .scene2,
 .scene3,
